@@ -18,6 +18,6 @@ class Meal
   end
 
   def display_in_list
-    "#{@id}. #{@name} #{@price}€"
+    "#{@id} - #{@name} #{@price}€"
   end
 end

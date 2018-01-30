@@ -3,7 +3,6 @@ class BaseView
     elements.each do |element|
       puts element.display_in_list
     end
-    puts ""
   end
 
   def ask_for(attribute)
