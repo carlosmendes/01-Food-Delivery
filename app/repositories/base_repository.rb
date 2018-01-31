@@ -23,7 +23,6 @@ class BaseRepository
     @elements.find {|element| element.id == id.to_i}
   end
 
-  private
 
   def save_csv
     return if @elements.empty?
@@ -34,6 +33,8 @@ class BaseRepository
       end
     end
   end
+
+  private
 
   def load_csv
     csv_options = { headers: :first_row, header_converters: :symbol }
