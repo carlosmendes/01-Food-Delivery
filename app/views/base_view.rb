@@ -6,7 +6,7 @@ class BaseView
   end
 
   def ask_for(attribute)
-    puts "What is the #{attribute}"
+    puts "What is the #{attribute}?"
     print "> "
     gets.chomp
   end

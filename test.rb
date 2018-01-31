@@ -1,13 +1,6 @@
-require_relative "app/models/meal"
-require_relative "app/repositories/meal_repository"
-
-sushi = Meal.new({name: 'Sushi', price: 10})
-# p bitoque
-
-meal_repo = MealRepository.new("data/meals.csv")
-
-meal_repo.add(sushi)
+require_relative "app/repositories/employee_repository"
 
 
-p meal_repo
-
+employee_repo = EmployeeRepository.new("data/employees.csv")
+e = employee_repo.find_by_username("jorge_jesus12")
+p e

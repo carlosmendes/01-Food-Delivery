@@ -1,12 +1,14 @@
 # TODO: implement the router of your app.
 
 class Router
-  def initialize(meals_controller, customers_controller)
+  def initialize(meals_controller, customers_controller, sessions_controller)
     @meals_controller = meals_controller
     @customers_controller = customers_controller
+    @sessions_controller = sessions_controller
   end
 
   def run
+    @employee = @sessions_controller.sign_in
     loop do
       # print menu
       print_menu
